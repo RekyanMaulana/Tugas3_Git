@@ -1,0 +1,65 @@
+*,
+*::before
+*::after{ 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000000;
+}
+ul{
+    border: 2px solid white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    justify-content: space-around;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: darkgrey;
+    padding: 10px;
+    transition: 0.5 ease;
+}
+ul:hover{
+    border: 3px solid darkgrey;
+}
+ul:hover li a{
+    color: white;
+    animation: glowing 1s ease-in-out infinite alternate;
+}
+ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+}
+.footer{
+    background-color: black;
+}
+.font-footer{
+    color: aliceblue;
+    text-align: center;
+    margin-bottom: 10px;
+}
+marquee{
+    color: aliceblue;
+}
+h1{
+    color: white;
+}
+img{
+    width: 20%;
+    border: 3px ridge white;
+    border-radius: 10px;
+}
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    text-align: justify;
+    font-size: 16pt;
+}
